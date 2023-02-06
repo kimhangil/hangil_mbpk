@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/build/
+file_exitsts_behavior: OVERWRITE
 permissions:
   - object : /
     pattern : "**"
