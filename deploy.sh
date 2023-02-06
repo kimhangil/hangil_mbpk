@@ -23,8 +23,8 @@ if [ -z $ROOT_WAR ]; then
         echo "war 파일이 존재하지 않습니다."
         kill -9 $DEPLOY_PID
 else
-        mv $REPOSITORY/ROOT.war /usr/local/tomcat/webapps/
+        sudo mv $REPOSITORY/ROOT.war /usr/local/tomcat/webapps/
     sleep 5
-        /usr/local/tomcat/bin/catalina.sh start
+        sudo /usr/local/tomcat/bin/catalina.sh start
 fi
 
